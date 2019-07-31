@@ -1,0 +1,30 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame_layout_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.movieapp.ui.MainFragment">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/shows_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="5dp" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/no_favorites_placeholder"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:src="@drawable/ic_not_intres"/>
+
+</FrameLayout>

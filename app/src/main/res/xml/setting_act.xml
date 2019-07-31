@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:defaultValue="@string/sort_default"
+        android:entries="@array/sort_name"
+        android:entryValues="@array/sort_values"
+        android:key="@string/preferences_key"
+        android:title="@string/sort_title" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="@string/quote_switch_key"
+        android:title="@string/switch_title" />
+
+    <ListPreference
+        android:defaultValue="3"
+        android:entries="@array/quotes_sort_name"
+        android:entryValues="@array/quotes_sort_values"
+        android:key="@string/time_key"
+        android:title="@string/time_preference_title" />
+
+</PreferenceScreen>
